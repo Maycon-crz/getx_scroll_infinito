@@ -8,7 +8,7 @@ class AppPages {
     GetPage(
       name: RouteName.home,
       binding: HomeBindings(),
-      page: () => HomePage(Get.find()),
+      page: () => HomePage(),
     ),
   ];
 }
