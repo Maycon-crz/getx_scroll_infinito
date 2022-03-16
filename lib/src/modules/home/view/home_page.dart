@@ -38,7 +38,7 @@ class HomePage extends GetView<HomeController> {
       body: Obx(
         () => LazyLoadScrollView(
           onEndOfPage: () => controller.nextPage(),
-          isloading: controller.lastPage,
+          isLoading: controller.lastPage,
           child: ListView.builder(
             itemCount: controller.users.length,
             itemBuilder: (context, index) {

@@ -9,7 +9,7 @@ class HomeController extends GetxController {
   final _paginationFilter = PaginationFilter().obs;
   final _lastPage = false.obs;
 
-  List<UserModel> get user => _users.toList();
+  List<UserModel> get users => _users.toList();
   int get limit => _paginationFilter.value.limit;
   int get _page => _paginationFilter.value.page;
   bool get lastPage => _lastPage.value;
