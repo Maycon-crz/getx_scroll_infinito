@@ -40,11 +40,12 @@ class HomePage extends GetView<HomeController> {
           onEndOfPage: () => controller.nextPage(),
           isloading: controller.lastPage,
           child: ListView.builder(
-              itemCount: controller.users.length,
-              itemBuilder: (context, index) {
-                final user = controller.users[index];
-                return ListTile(leading: Text(user.id), title: Text(user.name), subtitle: Text(user.username));
-              }),
+            itemCount: controller.users.length,
+            itemBuilder: (context, index) {
+              final user = controller.users[index];
+              return ListTile(leading: Text(user.id), title: Text(user.name), subtitle: Text(user.username));
+            },
+          ),
         ),
       ),
     );
