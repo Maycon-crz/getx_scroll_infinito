@@ -1,13 +1,13 @@
 import 'package:get/get.dart';
 import 'route_name.dart';
 import '../views/pages/home_page.dart';
-import '../bindings/home_binding.dart';
+import '../aplication/bindings/aplication_binding.dart';
 
 class AppPages {
   static final pages = [
     GetPage(
       name: RouteName.home,
-      binding: HomeBinding(),
+      binding: ApplicationBinding(),
       page: () => HomePage(),
     ),
   ];
