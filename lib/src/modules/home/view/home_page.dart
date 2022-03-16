@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
+import 'package:lazy_load_scrollview/lazy_load_scrollview.dart';
 import '../controller/home_controller.dart';
 
 class HomePage extends GetView<HomeController> {
@@ -35,7 +35,18 @@ class HomePage extends GetView<HomeController> {
           ),
         ],
       ),
-      body: Container(),
+      body: Obx(
+        () => LazyLoadScrollView(
+          onEndOfPage: () => controller.nextPage(),
+          isloading: controller.lastPage,
+          child: ListView.builder(
+              itemCount: controller.users.length,
+              itemBuilder: (context, index) {
+                final user = controller.users[index];
+                return ListTile(leading: Text(user.id), title: Text(user.name), subtitle: Text(user.username));
+              }),
+        ),
+      ),
     );
   }
 }
