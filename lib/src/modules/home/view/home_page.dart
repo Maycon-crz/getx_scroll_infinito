@@ -12,7 +12,7 @@ class HomePage extends GetView<HomeController> {
         actions: [
           PopupMenuButton(
             initialValue: controller.limit,
-            onSelected: (int value) => controller.changePaginationFilter(int value),
+            onSelected: (int value) => controller.changePaginationFilter(value),
             itemBuilder: (context) {
               return [
                 CheckedPopupMenuItem(
