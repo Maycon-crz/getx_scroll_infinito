@@ -9,6 +9,31 @@ class HomePage extends GetView<HomeController> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Recicldarte"),
+        actions: [
+          PopupMenuButton(
+            initialValue: controller.limit,
+            onSelected: (value) => controller.changePaginationFilter(value),
+            itemBuilder: (context) {
+              return [
+                CheckedPopupMenuItem(
+                  value: 15,
+                  checked: controller.limit == 15,
+                  child: Text('15 por página'),
+                ),
+                CheckedPopupMenuItem(
+                  value: 20,
+                  checked: controller.limit == 20,
+                  child: Text('20 por página'),
+                ),
+                CheckedPopupMenuItem(
+                  value: 50,
+                  checked: controller.limit == 50,
+                  child: Text('50 por página'),
+                ),
+              ];
+            },
+          ),
+        ],
       ),
       body: Container(),
     );
