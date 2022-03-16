@@ -7,6 +7,9 @@ class HomePage extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text("Recicldarte"),
+      ),
       body: Container(),
     );
   }
