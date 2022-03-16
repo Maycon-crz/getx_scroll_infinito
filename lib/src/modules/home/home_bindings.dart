@@ -1,3 +1,8 @@
 import 'package:get/get.dart';
 
-class HomeBindings implements Bindings {}
+class HomeBindings implements Bindings {
+  @override
+  void dependencies() {
+    // TODO: implement dependencies
+  }
+}
