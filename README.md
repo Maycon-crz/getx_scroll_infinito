@@ -12,7 +12,7 @@ Este projeto é um exemplo de como fazer uma requisição a API e listar os regi
 - [Documentação do Getx](https://pub.dev/packages/get)
 - [Créditos ao autor do projeto original: Rodrigo Silva Rahman de Almeida](https://github.com/rodrigorahman)
 - [Projeto Original](https://github.com/rodrigorahman/infinite_scroll_getx)
-<!-- 
+
 <img src='img1.PNG'>
 <img src='img2.PNG'>
-<img src='img3.PNG'> -->
+<img src='img3.PNG'>
