@@ -4,6 +4,7 @@ import '../../../models/user_model.dart';
 import '../../../models/pagination_filter.dart';
 
 class HomeController extends GetxController {
+  
   final UserRepository _userRepository;
   final _users = <UserModel>[].obs;
   final _paginationFilter = PaginationFilter().obs;
